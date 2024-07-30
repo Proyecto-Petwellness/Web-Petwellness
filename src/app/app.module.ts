@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthenticationModule } from './authentication/authentication.module';
 import { SharedModule } from './shared/shared.module';
 import { InicioModule } from './inicio/inicio.module';
+import { MeetingModule } from './meeting/meeting.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InicioModule } from './inicio/inicio.module';
     AppRoutingModule,
     AuthenticationModule,
     SharedModule,
-    InicioModule
+    InicioModule,
+    MeetingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
