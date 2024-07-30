@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthenticationModule } from './authentication/authentication.module';
 import { SharedModule } from './shared/shared.module';
+import { MascotasComponent } from './mascotas/mascotas.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MascotasComponent
   ],
   imports: [
     BrowserModule,
