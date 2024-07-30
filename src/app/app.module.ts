@@ -7,6 +7,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { SharedModule } from './shared/shared.module';
 import { InicioModule } from './inicio/inicio.module';
 import { MeetingModule } from './meeting/meeting.module';
+import { ConsultsModule } from './consults/consults.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MeetingModule } from './meeting/meeting.module';
     AuthenticationModule,
     SharedModule,
     InicioModule,
-    MeetingModule
+    MeetingModule,
+    ConsultsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
