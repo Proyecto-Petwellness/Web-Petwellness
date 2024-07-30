@@ -7,6 +7,8 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import { SharedModule } from './shared/shared.module';
 import { MascotasComponent } from './mascotas/mascotas.component';
 import { PreparacionConsultaComponent } from './preparacion-consulta/preparacion-consulta.component';
+import { InicioModule } from './inicio/inicio.module';
+import { HistorialModule } from './historial/historial.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PreparacionConsultaComponent } from './preparacion-consulta/preparacion
     BrowserModule,
     AppRoutingModule,
     AuthenticationModule,
-    SharedModule
+    SharedModule,
+    InicioModule,
+    HistorialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
