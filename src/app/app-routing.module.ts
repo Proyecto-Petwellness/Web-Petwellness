@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: 'authentication', loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule) },
   { path: 'inicio', loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioModule) },
+  { path: 'reservar-consulta', loadChildren: () => import('./reservar-consulta/reservar-consulta.module').then(m => m.ReservarConsultaModule) },
 ];
 
 @NgModule({
