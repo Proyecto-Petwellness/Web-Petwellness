@@ -1,1 +1,70 @@
-<p>signin works!</p>
+<datalist id="Tipos-albergue">
+    <option value="A"></option>
+    <option value="B"></option>
+    <option value="C"></option>
+    <option value="D"></option>
+</datalist>
+<datalist id="Especialidad">
+    <option value="A"></option>
+    <option value="B"></option>
+    <option value="C"></option>
+    <option value="D"></option>
+</datalist>
+<datalist id="Institucion-educativa">
+    <option value="A"></option>
+    <option value="B"></option>
+    <option value="C"></option>
+    <option value="D"></option>
+</datalist>
+<body>
+    <section class="Fondo">
+        <img src="" alt="logo-Petwellness">
+        <h1>Crea una cuenta</h1>
+        <app-barra-usuario></app-barra-usuario>
+        <form action="/">
+            <section>
+                <h3>Nombres</h3>
+                <input type="text" name="Nombre" required>
+            </section>
+            <section>
+                <h3>Apellidos</h3>
+                <input type="text" name="Apellido" required>
+            </section>
+            <section>
+                <h3>Email</h3>
+                <input type="email" name="Email" required>
+            </section>
+            <section>
+                <h3>Teléfono</h3>
+                <input type="tel" name="Telefono" required>
+            </section>
+            <section>
+                <h3>Nombre del albergue</h3>
+                <input type="text" name="Nombre-albergue" required>
+            </section>
+            <section>
+                <h3>Tipo de albergue</h3>
+                <input list="Tipos-albergue" name="Tipo-albergue" required>
+            </section>
+            <section>
+                <h3>Especialidad</h3>
+                <input list="Especialidad" name="Especialidad" required>
+            </section>
+            <section>
+                <h3>Institución educativa</h3>
+                <input list="Institucion-educativa" name="Institucion-educativa" required>
+            </section>
+            <section>
+                <h3>Contraseña</h3>
+                <input type="password" name="Contrasena" required>
+            </section>
+            <section>
+                <h3>Confirmar contraseña</h3>
+                <input type="password" name="Confirmar-contrasena" required>
+            </section>
+            <button type="">Crear cuenta</button>
+            <span>¿Ya tienes una cuenta?</span>
+            <button type="" routerLink="/authentication/login">Acceder a tu cuenta</button>
+        </form>
+    </section>
+</body>

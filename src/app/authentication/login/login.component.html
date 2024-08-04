@@ -1,1 +1,21 @@
-<p>login works!</p>
+<body>
+    <section class="Fondo">
+        <img src="" alt="logo-Petwellness">
+        <h1>Accede a tu cuenta</h1>
+        <app-barra-usuario></app-barra-usuario>
+        <form action="/">
+            <section>
+                <h3>Email</h3>
+                <input type="email" name="Email" required>
+            </section>
+            <section>
+                <h3>Contraseña</h3>
+                <input type="password" name="Contrasena" required>
+            </section>
+            <button type="">Acceder</button>
+            <span routerLink="/authentication/verificacion">Olvidé mi contraseña</span>
+            <span>¿No tienes cuenta?</span>
+            <button type="" routerLink="/authentication/signin">Crear una cuenta</button>
+        </form>
+    </section>
+</body>
