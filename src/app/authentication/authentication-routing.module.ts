@@ -9,7 +9,7 @@ import { CodigoComponent } from './codigo/codigo.component';
 import { CambiarContrasenaComponent } from './cambiar-contrasena/cambiar-contrasena.component';
 
 const routes: Routes = [
-  //{ path: '', component: AuthenticationComponent },
+  { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent},
   { path: 'signin', component: SigninComponent},
   { path: 'barra', component: BarraUsuarioComponent},
