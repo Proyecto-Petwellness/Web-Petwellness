@@ -9,6 +9,8 @@ import { MascotasComponent } from './mascotas/mascotas.component';
 import { PreparacionConsultaComponent } from './preparacion-consulta/preparacion-consulta.component';
 import { InicioModule } from './inicio/inicio.module';
 import { HistorialModule } from './historial/historial.module';
+import { MeetingModule } from './meeting/meeting.module';
+import { ConsultsModule } from './consults/consults.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { HistorialModule } from './historial/historial.module';
     SharedModule,
     InicioModule,
     HistorialModule
+    MeetingModule,
+    ConsultsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
