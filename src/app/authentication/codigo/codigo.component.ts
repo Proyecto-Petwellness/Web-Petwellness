@@ -1,12 +1,12 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { UsuarioService } from '../../services/usuario.service';
+import { UsuarioService } from './../../services/usuario.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  selector: 'app-codigo',
+  templateUrl: './codigo.component.html',
+  styleUrl: './codigo.component.css'
 })
-export class LoginComponent implements OnInit, AfterViewInit {
+export class CodigoComponent implements OnInit{
 
   UsuarioActivo = '';
 
@@ -16,13 +16,6 @@ export class LoginComponent implements OnInit, AfterViewInit {
     this.UsuarioService.UsuarioActivo.subscribe(Usuario =>{
       this.UsuarioActivo = Usuario;
     })
-  }
-
-  ngAfterViewInit(): void {
-    this.CambiarImagen();
-  }
-  
-  CambiarImagen(): void { 
     const Imagen = document.getElementById("Cuerpo") as HTMLElement;
     switch (this.UsuarioService.GetUsuarioActivo()) {
       case "Dueños": {
@@ -39,11 +32,4 @@ export class LoginComponent implements OnInit, AfterViewInit {
       }
     }
   }
-
-  OcultarContrasena(){
-    const Contrasena = document.getElementById("Ver-contrasena") as HTMLElement;
-    const tipo= Contrasena.getAttribute('type') === 'password' ? 'text': 'password';
-    Contrasena.setAttribute('type', tipo);
-  }
-
 }
