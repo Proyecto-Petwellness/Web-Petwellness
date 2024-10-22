@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'historial', loadChildren: () => import('./historial/historial.module').then(m => m.HistorialModule) },
   { path: 'meeting', loadChildren: () => import('./meeting/meeting.module').then(m => m.MeetingModule) },
   { path: 'consults', loadChildren: () => import('./consults/consults.module').then(m => m.ConsultsModule) },
+  { path: 'registrar-mascota', loadChildren: () => import('./registrar-mascota/registrar-mascota.module').then(m => m.RegistrarMascotaModule) },
 ];
 
 @NgModule({

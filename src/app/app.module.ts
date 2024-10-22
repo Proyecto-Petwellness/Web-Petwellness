@@ -12,6 +12,7 @@ import { InicioModule } from './inicio/inicio.module';
 import { HistorialModule } from './historial/historial.module';
 import { MeetingModule } from './meeting/meeting.module';
 import { ConsultsModule } from './consults/consults.module';
+import { RegistrarMascotaModule } from './registrar-mascota/registrar-mascota.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ConsultsModule } from './consults/consults.module';
     SharedModule,
     RecordatoriosModule,
     InicioModule,
+    RegistrarMascotaModule,
     HistorialModule
     MeetingModule,
     ConsultsModule
